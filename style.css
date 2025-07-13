@@ -1,4 +1,4 @@
-/* General */
+/* Fuentes base */
 body {
   background-color: #f1b239;
   font-family: 'Poppins', sans-serif;
@@ -7,50 +7,57 @@ body {
   text-align: center;
 }
 
+/* Logo */
 .logo {
-  width: 120px;
-  max-width: 60%;
+  width: 140px;
   margin-top: 30px;
 }
 
-/* Titular y slogan */
+/* Título y eslogan */
 h1 {
   font-family: 'Hobo Std', cursive;
   color: white;
-  margin: 10px 0;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+  margin: 10px 0 5px;
 }
 
 .slogan {
   color: white;
   font-size: 1.2rem;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-/* Enlaces en grilla */
+/* Contenedor de enlaces */
 .links-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
   max-width: 600px;
   margin: 0 auto;
+  gap: 20px;
   background-color: rgba(88, 49, 20, 0.8);
   padding: 30px;
-  border-radius: 12px;
+  border-radius: 15px;
 }
 
+/* Botones de enlace */
 .link-btn {
   font-family: 'Hobo Std', cursive;
   background-color: rgba(255,255,255,0.15);
   color: white;
+  text-decoration: none;
   padding: 15px;
   border-radius: 10px;
-  text-decoration: none;
   font-size: 1.2rem;
-  transition: background 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
+  transition: background 0.3s ease;
+}
+
+.link-btn img {
+  width: 26px;
+  height: 26px;
 }
 
 .link-btn:hover {
@@ -65,10 +72,15 @@ footer {
   font-size: 0.9rem;
 }
 
-footer a {
-  color: white;
-  font-weight: bold;
-  text-decoration: underline;
+footer img.ozlab-logo {
+  margin-top: 10px;
+  width: 100px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+footer img.ozlab-logo:hover {
+  opacity: 1;
 }
 
 /* Responsive */
@@ -79,11 +91,16 @@ footer a {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .link-btn {
     font-size: 1rem;
     padding: 12px;
+  }
+
+  .link-btn img {
+    width: 22px;
+    height: 22px;
   }
 }
